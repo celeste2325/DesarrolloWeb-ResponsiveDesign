@@ -1,0 +1,622 @@
+*{box-sizing: border-box;}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?x5h6xl'); 
+    src:  url('../fonts/icomoon.eot?x5h6xl#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?x5h6xl') format('truetype'),
+      url('../fonts/icomoon.woff?x5h6xl') format('woff'),
+      url('../fonts/icomoon.svg?x5h6xl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-certificate{
+      margin-left: 10px;
+     font-size: 30px;
+     vertical-align: middle;
+     color:black;
+  
+  }
+
+  .icon-certificate:before {
+    content: "\e900";
+    
+  }
+  .icon-graduate:before {
+    content: "\e901";
+  }
+
+
+  /* .inicio{
+    
+      background-color: red;
+      display: block;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 20px;
+      margin: 0 10px; 
+  }
+   */
+ 
+  .burger-button{
+     
+    display: block; /*para que tome el valor real de width y height establecido*/
+    height: 40px;
+    width: 40px;
+    border-radius: 22.5px;
+    background-color: rgba(0, 0, 0, .8);/* todos los colores en 0, es decir negro y con opacidad de .8 es decir 20% de transparencia*/
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    
+    right:10px; /*se despega 5px de la izq*/
+    top: 4px; /*se despega 5px de arriba*/
+    display: none; /*para que no se muestre el menu hambuerguesa*/
+    
+
+  }
+
+  .icon-menu:before {
+    content: "\e902";
+  }
+  
+body{
+    font-family: 'ZCOOL XiaoWei';
+    color: black;
+    margin: 0;
+    background-color: #fafafa;
+   
+} 
+
+/*header*/
+
+.header{/*revisado*/
+    background-color: rgb(36, 26, 26);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*para que cuando la pantalla se haga mas chica el elemento se apile uno debajon de otro*/
+    align-items: center;
+    flex-shrink: 0;
+    height: 70px;
+    border-bottom: 2px solid rgba(0, 0, 0, .8);
+
+}
+
+.header p{
+    font-size: 20px;
+    margin: 0;
+    
+}
+
+ul, figure{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-headerContainer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-header{
+    height: 55px;
+    width: 66px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ul{
+    height: inherit;
+    list-style: none;
+    display: flex;
+}
+.header ul li{
+    height: inherit;
+}
+.header a{
+    height: inherit;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header a:hover{
+    background-color:#37c2d5;
+    border: 1px solid rgb(27, 26, 26);
+    border-radius: 10px;
+    color: black ;
+   
+}
+
+
+
+
+/*descripción e imagen principal*/
+
+
+ .hero{/*revisado*/
+    height: 250px;
+    position: relative;
+    
+   
+} 
+
+h1{
+    background: #d7d7d9;
+    border-radius: 18px;
+    margin: 0;
+    line-height: 1;
+    font-size: 23px;
+    letter-spacing: -.2px;
+    padding:5px 10px; 
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    text-shadow: 1px -1px aliceblue;
+    
+}
+h1 strong{
+    color: #005300;
+ 
+    }
+ .hero-image{
+    
+    height: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* right: 0;*//*solo quiero que se estire hacia arriba y hacia abajo*/
+   /*left: 0; */
+    z-index: 1;
+    width: 1000px;
+    max-width: 100%;
+    
+    
+    
+} 
+    
+
+/* sección de certificados*/
+
+
+.portfolio h2, .layouts h2{
+    font-size: 20px;
+    background-color:#37c2d5;
+    box-shadow: 2px 2px black;
+    text-shadow: 1px -1px aliceblue;
+    padding: 15px 0;
+    text-align: center;
+    margin:10
+    px 0;
+    
+}
+
+.certificate{/*revisado*/
+    background-color: white;
+    height: 300px;
+    border: 1px solid rgb(228, 222, 222);
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 7px 12px;   
+}
+.certificate-fecha strong{
+    font-weight: 100px;
+}
+
+.certificate-institute{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.certificate-title{
+    color: rgb(27, 24, 226);
+    font-family: 'Roboto Condensed';
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.certificate-fecha{
+margin: 10px 0;
+
+}
+
+.certificate-description{
+    font-family: teko;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+
+.certificate-details{/*revisado*/
+    width: 50%;
+}
+    
+.certificate-imageContainer{/*revisado*/
+width: 50%;
+padding: 0;
+}
+    
+.certificate-imageContainer img{
+height: 280px;
+/* max-height: 280px; */
+width: 500px;
+max-width: 100%; /*tiene un width fijo. pero si el contenedor padre no tiene espacio, la imagen se va a adaptar al 100% del ancho del contenedor padre*/
+}
+
+
+/* Maquetados realizados*/
+
+
+.jobsContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0;
+   
+}
+
+.jobs{/*revisado*/
+    background-color: rgb(228, 243, 250);
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+   
+  
+}
+
+.jobs-imageContainer, .jobs-image{
+    width: 100%;
+}
+
+.jobs-pie{
+    margin: 20px 40px;
+    border: 1px solid rgb(228, 222, 222);
+    background-color: white;
+    margin-top: -40px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  
+}
+
+.jobs-description{
+text-align: left;
+
+}
+.jobs-url{
+background-color: rgb(228, 243, 250);;
+border: 1px solid;
+padding: 5px 20px;
+border-radius: 10px;
+margin-top: 20px;
+
+}
+    
+/*contactenos*/
+
+.form-email h3, .form-email.email, .form-email button{
+    padding:0;
+    margin:0;
+} 
+
+.contact{/*revisado*/
+    align-items: center;
+    background-color: rgb(214, 214, 248);
+    height: 150px;
+    font-family: 'Indie Flower';
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.form-email{
+    height: inherit;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-email h3, .email, botton{ 
+    margin-bottom: 10px;
+
+}
+
+.form-email input.email{
+    background: url(../image/svg/microsoftoutlook.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+
+    background-size: 18px;  
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px 40px; /*ancho y alto de la casilla de email */
+    border-radius: 4px;
+    font-weight: bold;
+    }
+
+.form-email button{
+    
+    border: 1px solid rgb(65, 198, 250);
+    padding: 5px 40px; /*ancho y alto de la casilla del boton*/
+    border-radius: 4px;
+    background:transparent; /*para que tome el color del bgc del padre*/
+    color:black;
+    font-weight: bold;
+} 
+.contact-imageSocials a{
+    width: 40px;
+    height: 40px;
+    /* box-sizing: border-box; */
+}
+
+
+.contact-imageSocials img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    margin-right: 0px;} /*elimino el margin right establecido en la linea anterior./*
+
+/*footer*/
+
+.footer{/*revisado*/
+    background-color: #1d252c;
+    color: white;
+    height:50px;
+   
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* padding: 10px; */
+   
+    font-size: 15px;
+    
+}
+
+
+.description-footer a{
+    color: white;
+
+}
+
+.image-footer{
+    width:40px; 
+    height:20px;
+    vertical-align: middle;
+}
+
+.container{/*revisado*/
+    max-width: 1000px; /*permite un maximo de 1000px de ancho. para que los elementos se puedan ir ajustando y asi adaptarse  a los distintos tamaños de pantallas*/
+   /* width: 100%;  independiente del tamaño que tengan los hijos, este va a ocupar el 100% del contenedor*/
+   flex: 1; /*hace el mismo comportamiento del width:100% solo que este ocupa el 100% sin importar el el padding u otra propiedad no se suma a este 100% en cambio con el otro si.*/
+   margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    
+ 
+}
+
+
+/* media queries destock firts */
+
+@media screen and (max-width: 1023px){ /*uno menos a las pantallas de escritorio¨*/
+   
+    h1{
+        font-size: 1.8em;
+       
+    }
+    
+}
+
+@media screen and (max-width: 767px)/*hasta 768 se ve bien, se coloca el condicional para dispositivos menores a 767, q ya son considerados smartphone*/{
+/* body{
+    margin-top: -20px;/*para que suba completo hasta el inicio de pagina
+} */
+
+.burger-button{
+    display: block; /* para que se epiece a mostrar el menu hamburguesa*/
+}
+.header{ /*revisado*/
+display: block;
+height: auto;
+text-align: center;
+}
+.logo-header{
+height: 2.3em;
+width: 3em;
+}
+
+.certificate{
+    height: auto;
+}
+
+
+.header p{
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+.menu{
+    background:rgba(55, 194, 213,.9);;
+    position: fixed;
+    z-index: 3;
+    top: 0;/*para que se estire hacia arriba*/
+    left: 0;/*para q se estire hacia la izq*/
+    width: 100vw; /*para que tome todo el alto que tengo en el  viewport*/
+    height: 100vh;/*para que tome todo el alto que tengo en el  viewport*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:-100vw; /*para que se esconda hacia la izq el total de lo q vale el viewport*/ 
+    transition: .3s; /*es una animacion*/ 
+}
+
+.menu.is-active{
+    left: 0; /*para que se muestre el menu q esta escondido con left:-100vw*/
+    
+}
+
+h1{
+    font-size: 1.5em;
+}
+.header ul{/*revisado*/
+    display: block;
+    height: auto;
+}
+
+.header ul li{/*revisado*/
+    height: 46px;
+}
+.header ul li a{/*revisado*/
+   display: inherit;
+   text-align: center;
+   text-decoration: underline;
+   font-size: 2em; 
+}
+
+
+.jobsContainer{
+    display: block;
+}
+.jobs{
+    width: auto;
+}
+.contact{
+    height: auto;
+    justify-content: center;
+}
+.form-email{
+    text-align: center;
+}
+
+
+.footer{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+}
+@media screen and (max-width: 480px){
+  
+
+h1{
+    font-size: 1em;
+}
+
+.portfolio h2, .layouts h2{
+    padding: .8em;
+    font-size: 1em;
+} 
+.certificate{/*revisado*/
+    display: block;
+    height: auto;
+}
+.certificate-imageContainer{
+    width: auto;
+}
+.certificate-details{/*para que se ajusten al 100% del contenedor, es mejor siempre poner widht:auto que 100%*/
+    width: auto;
+    font-size: 16px;/*cambio el font-size del contenedor(.certificate-details), para despues poder modificar los tamaños de los hijos con la medida relativa em. Luego si quiero hacer un cambio en el font-size de los hijos no tengo q setearlos uno por uno. si no que solo edito este font-size y los otros se adaptan*/
+    
+}
+.certificate-title, .certificate-fecha, .certificate-url{
+    margin: .3em 0; /*.3em. 1em por defecto= 16px. si en el proyecto el margin=10px.; .5em=5px. entonces le ponemos .3 para q el margen sea menos q la mitad del proyecto.*/
+}
+
+.certificate-title{
+font-size: .7em;
+margin-bottom: .3em;
+}
+.certificate-institute{
+font-size: 1.5em;
+}
+
+.certificate-fecha{
+ font-size: 1em;
+}
+.institute-url{
+font-size: 1em;
+}
+.certificate-description{
+font-size: .9em;
+margin: 1.2em 0;
+}
+
+.jobs-pie{
+    margin: -2.5em .5em .8em; /*40px(top) 8px(right-left) 8px(botton)*/
+    padding: 1em;
+}
+
+
+
+}
+
+@media screen and (max-width: 320px){
+
+h1{
+    font-size: .8em;  
+}
+
+.portfolio h2, .layouts h2{
+    padding: .5em;
+    font-size: .8em;
+} 
+.certificate-details{
+    font-size: 12px;
+}
+  
+
+}
