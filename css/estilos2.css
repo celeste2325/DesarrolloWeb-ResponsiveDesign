@@ -305,8 +305,15 @@ max-width: 100%; /*tiene un width fijo. pero si el contenedor padre no tiene esp
   
 }
 
-.jobs-imageContainer, .jobs-image{
+.jobs-imageContainer{
     width: 100%;
+    height: 300px;
+}
+.jobs-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .jobs-pie{
