@@ -1,0 +1,56 @@
+body{
+background-color:white;
+color:black;
+
+}
+
+header{
+background-color: rgb(100, 82, 82);
+
+}
+
+.hero{
+    background-color: black;
+    color: white;
+}
+
+.hero strong{
+    color: blue;
+
+}
+
+.portfolio{
+background-color:rgb(114, 114, 226);
+
+}
+
+
+img{ 
+    width: 400px;
+    height: 400px;
+}
+
+.logo-header{
+    width: 80px;
+    height:80px;
+}
+
+
+
+
+#maquetado_realizado{
+
+background-color: rgb(113, 190, 226);
+color: white;
+}
+
+#resaltarPresentacion{
+font-size: 40px;
+
+}
+
+#resaltarPresentacion strong{
+color: rgb(72, 126, 228);
+
+
+}
